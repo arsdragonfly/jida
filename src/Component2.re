@@ -26,6 +26,6 @@ let make = (~greeting) => {
     <button onClick={_event => dispatch(Toggle)}>
       {ReasonReact.string("Toggle greeting")}
     </button>
-    {state.show ? ReasonReact.string(greeting) : ReasonReact.null}
+    {state.show ? ReasonReact.string(greeting) : <Tile />}
   </div>;
 };

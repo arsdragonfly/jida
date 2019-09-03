@@ -3,6 +3,7 @@
 
 var Curry = require("bs-platform/lib/js/curry.js");
 var React = require("react");
+var Tile$ReactHooksTemplate = require("./Tile.bs.js");
 
 function Component2(Props) {
   var greeting = Props.greeting;
@@ -34,7 +35,7 @@ function Component2(Props) {
                   onClick: (function (_event) {
                       return Curry._1(dispatch, /* Toggle */1);
                     })
-                }, "Toggle greeting"), match$1 ? greeting : null);
+                }, "Toggle greeting"), match$1 ? greeting : React.createElement(Tile$ReactHooksTemplate.make, { }));
 }
 
 var make = Component2;
